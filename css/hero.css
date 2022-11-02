@@ -1,0 +1,227 @@
+.hero {
+    min-height: 600px;
+    padding: 0 20px;
+    background: url('../img/banner_320.jpg') center top / cover no-repeat;
+}
+
+.main__hero {
+    margin-top: 72px;
+    padding-top: 72px;
+    padding-bottom: 30px;
+}
+
+.hero__row {
+    margin-bottom: 72px;
+}
+
+.hero__row:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.hero__title {
+    margin-bottom: 37px;
+}
+
+.hero__title > span {
+    display: block;
+    width: 288px;
+    height: 8px;
+    background: linear-gradient(90deg, #E27410 -3.97%, rgba(196, 196, 196, 0) 102.88%, #025EA1 102.88%);
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.hero__description {
+    max-width: 280px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #FFFFFF;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement__item {
+    width: 100%;
+    max-width: 350px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    padding: 22px 16px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.achievement__item:last-child {
+    margin-bottom: 0;
+}
+
+.achievement__img {
+    max-width: 24px;
+    min-width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.achievement__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #2D3343;
+}
+
+@media (min-width: 500px) {
+    .hero {
+        background: url('../img/banner_768.jpg') center top / cover no-repeat;
+    }
+}
+
+@media (min-width: 768px) {
+    .main__hero {
+        margin-top: 124px;
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-weight: 900;
+        font-size: 48px;
+        margin-bottom: 45px;
+    }
+
+    .hero__title > span {
+        width: 500px;
+    }
+
+    .hero__description {
+        max-width: 430px;
+        font-size: 18px;
+    }
+
+    .hero__row {
+        margin-bottom: 195px;
+    }
+
+    .achievement {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .achievement__item {
+        margin-bottom: 0;
+    }
+
+    .achievement__item:first-child {
+        flex: 1 1 152px;
+    }
+
+    .achievement__item:nth-child(2) {
+        flex: 1 1 234px;
+    }
+
+    .achievement__item:last-child {
+        flex: 1 1 279px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background: url('../img/banner.jpg')  80% / cover no-repeat;
+    }
+
+    .main__hero {
+        margin-top: 150px;
+        padding-top: 173px;
+        padding-bottom: 50px;
+    }
+
+    .hero__row {
+        margin-bottom: 120px;
+    }
+
+    .title {
+        font-size: 64px;
+        line-height: 77px;
+    }
+
+    .achievement {
+        column-gap: 13px;
+    }
+
+    .achievement__item {
+        height: 90px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .achievement__item:first-child {
+        flex: 1 1 223px;
+    }
+
+    .achievement__item:nth-child(2) {
+        flex: 1 1 320px;
+    }
+
+    .achievement__item:last-child {
+        flex: 1 1 374px;
+    }
+
+    .achievement__img {
+        max-width: 48px;
+        min-width: 48px;
+        height: 48px;
+        margin-right: 15px;
+    }
+
+    .achievement__img path {
+        transition: 0.4s;
+    }
+
+    .achievement__title {
+        font-weight: 400;
+        font-size: 18px;
+        transition: 0.4s;
+    }
+
+    .achievement__item:hover {
+        background: #F47A0B;
+        box-shadow: 0px 12px 30px rgba(68, 32, 0, 0.15);
+        transform: translateY(-20px);
+    }
+
+    .achievement__item:hover .achievement__img path {
+        fill: #FFFFFF;
+    }
+
+    .achievement__item:hover .achievement__title {
+        color: #FFFFFF;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .achievement {
+        column-gap: 60px;
+    }
+
+    .achievement__item {
+        max-width: 100%;
+    }
+
+    .achievement__item:first-child,
+    .achievement__item:nth-child(2), 
+    .achievement__item:last-child {
+        flex: 1 1 33.333%;
+    }
+}
